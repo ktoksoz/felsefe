@@ -1,0 +1,30 @@
+/* Elea ve atomcular deney stilleri */
+.pm-fill { flex: 0 0 38%; min-height: 160px; }
+.pm-pad { border-top: 1px solid var(--line); flex: 1; }
+.pm-oncul { list-style: none; counter-reset: pm; margin: 0; padding: 0; display: grid; gap: 6px; }
+.pm-li { counter-increment: pm; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; padding: 6px 0 6px 2.1em; position: relative; border-bottom: 1px solid var(--line); }
+.pm-li::before { content: counter(pm); position: absolute; left: 0; top: 7px; width: 1.5em; height: 1.5em; border: 1px solid var(--brass); border-radius: 50%; display: grid; place-items: center; font-family: var(--f-ui); font-size: .78rem; color: var(--brass-2); }
+.pm-li p { margin: 0; color: var(--ink); font-size: .98rem; line-height: 1.4; }
+.pm-li.kapali p { color: var(--muted); }
+.pm-li.kabul::before { background: rgba(201,165,92,.25); }
+.pm-li.red::before { border-color: var(--aleyhte); color: var(--aleyhte); }
+.pm-li.red p { text-decoration: line-through; text-decoration-color: var(--aleyhte); }
+.pm-btns { display: flex; gap: 6px; }
+.pm-btns .btn { padding: .3em .9em; font-size: .85rem; }
+.pm-durum { font-family: var(--f-ui); font-size: .78rem; color: var(--muted); }
+.pm-sonuc { list-style: none; padding: 8px 0 4px 2.1em; }
+.pm-sonuc p { margin: 0; color: var(--muted); font-style: italic; }
+.pm-sonuc.on p { color: var(--brass-2); }
+.pm-out { margin-top: 8px; }
+.pm-reset { margin-top: 10px; font-size: .82rem; }
+.as-bilgi { padding: 8px 16px 10px; font-family: var(--f-ui); font-size: .9rem; color: var(--ink-2); border-top: 1px solid var(--line); }
+.as-bilgi b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.as-terim { display: block; color: var(--muted); font-size: .82rem; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.as-oy { border-top: 1px solid var(--line); max-height: 44%; }
+.km-bilgi { margin: 0; font-family: var(--f-ui); font-size: .88rem; color: var(--ink-2); }
+.km-bilgi b { color: var(--ink); font-variant-numeric: tabular-nums; }
+@media (max-width: 860px) { .as-oy { max-height: none; } .pm-fill { flex-basis: 220px; } }
+.pm-li.kapali .pm-btns { opacity: .35; }
+@media (max-width: 860px) {
+  #parmenides .stage > .fill, #zenon-asil .stage > .fill, #zenon-ok .stage > .fill, #empedokles .stage > .fill, #atomcular .stage > .fill { flex: none; height: 280px; min-height: 0; }
+}

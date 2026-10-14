@@ -1,0 +1,23 @@
+/* Kapanış: başlık ve sonuçlar üstte, zaman çizelgesi altta */
+.cover#kapanis { grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) minmax(220px, 38vh); place-items: stretch; text-align: left; }
+.cover#kapanis .stage { position: relative; inset: auto; grid-row: 2; margin: 0 var(--gutter) 10px; border: 1px solid rgba(201,165,92,.28); background: var(--bg-2); }
+.cover#kapanis .cover-text { grid-row: 1; align-self: stretch; overflow-y: auto; padding: clamp(18px, 3.5vh, 44px) var(--gutter) 18px; max-width: none;
+  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); column-gap: 52px; align-content: start; }
+.cover#kapanis .cover-text > * { grid-column: 1; }
+.cover#kapanis .cover-text > .kp-sag { grid-column: 2; grid-row: 1 / span 5; display: flex; flex-direction: column; gap: .6rem; }
+.kp-sag .kp-yakin { flex: 1; }
+.cover#kapanis h2 { font-size: clamp(2.4rem, min(5vw, 8vh), 4.6rem); margin-bottom: .8rem; }
+.cover#kapanis p { font-size: 1.02rem; margin-bottom: .8rem; max-width: 60ch; }
+.kp-yakin h3 { margin: 0 0 .5rem; font-family: var(--f-display); font-weight: 400; font-size: 1.5rem; color: var(--brass-2); }
+.kp-liste { margin: 0 0 .6rem; padding-left: 1.4em; display: grid; gap: 6px; }
+.kp-liste li { color: var(--ink-2); font-family: var(--f-ui); font-size: .88rem; }
+.kp-liste li::marker { color: var(--gel); font-weight: 700; }
+.kp-liste small a { color: var(--ink-2); }
+.kp-not, .kp-bos { font-family: var(--f-ui); font-size: .88rem !important; color: var(--muted) !important; }
+.kp-bos { color: var(--ink-2) !important; font-family: var(--f-body); font-size: 1rem !important; }
+.kp-oneri { display: flex; flex-wrap: wrap; gap: 6px; }
+.kp-eylem { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: .8rem; }
+.kp-siteler { font-family: var(--f-ui); font-size: .88rem !important; color: var(--muted); }
+.kp-siteler a { color: var(--ink-2); }
+@media (max-width: 1100px) { .cover#kapanis .cover-text { grid-template-columns: 1fr; } .cover#kapanis .cover-text > .kp-sag { grid-column: 1; grid-row: auto; } }
+@media (max-width: 860px) { .cover#kapanis { grid-template-rows: auto 360px; } .cover#kapanis .cover-text { overflow: visible; } .cover#kapanis .stage { margin: 0 16px 20px; } }

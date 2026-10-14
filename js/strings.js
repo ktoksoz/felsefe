@@ -1,0 +1,65 @@
+/* Arayüz metinleri: düğmeler, etiketler, durum mesajları.
+   Çeviri ya da mobil uygulama için bu dosya tek başına değiştirilebilir. */
+window.STR = {
+  siteAdi: "Bilgelik Sevgisi",
+  yollar: { 0: "Giriş", 1: "Zaman yolculuğu", 2: "Büyük sorular", 3: "Kapanış" },
+  tumSlaytlar: "Tüm slaytlar",
+  sunucuNotu: "Sunucu notu",
+  notYok: "Bu slayt için not yok.",
+  slayt: "slayt",
+  geriDon: (ad) => `${ad} slaytına dön`,
+  geriDonKisa: "Döndüğünüz yer",
+  kapat: "Kapat",
+  kisayollar:
+    "Kısayollar: <kbd>→</kbd> / <kbd>Boşluk</kbd> ileri · <kbd>←</kbd> geri · <kbd>N</kbd> sunucu notları · " +
+    "<kbd>T</kbd> metni gizle (sunum) · <kbd>A</kbd> sesli anlatım · <kbd>G</kbd> deney gösterimleri · " +
+    "<kbd>B</kbd> sapılan yere dön · <kbd>O</kbd> bu ekran · <kbd>F</kbd> tam ekran",
+  // anlatım
+  anlatim: "Sesli anlatım",
+  oynat: "Oynat",
+  duraklat: "Duraklat",
+  anlatimKonumu: "Anlatım konumu",
+  otomatikGec: "Bitince sonraki slayta geç",
+  anlatimiKapat: "Anlatımı kapat",
+  oynatmakIcin: "Oynatmak için ▶ düğmesine basın",
+  anlatimBitti: "Anlatım bitti",
+  sonrakineGeciliyor: "Sonraki slayta geçiliyor…",
+  sesYok: "Bu slayt için ses dosyası bulunamadı",
+  otomatikKapandi: "Otomatik geçiş kapatıldı",
+  // rehber
+  goster: "Göster",
+  gostermekIcin: "Göstermek için tıklayın",
+  gosterimAcik: "Deney gösterimleri açık",
+  gosterimKapali: "Deney gösterimleri kapalı (G ile açılır)",
+  dene: "Dene: ",
+  // sözlük
+  vikipedi: "Vikipedi'de oku ↗",
+  wikipedia: "Wikipedia'da oku (İngilizce) ↗",
+  zamanYolculugunda: "Zaman yolculuğunda gör",
+  dogdu: "Doğduğu yer",
+  // ortak bileşenler
+  kimNeDedi: "Kim ne dedi?",
+  buyukSoru: "Büyük soru",
+  ilke: "Dayandığı ilke",
+  ayniFikirde: "Sizinle aynı fikirde",
+  itiraz: "İtiraz",
+  lehte: "Lehte",
+  aleyhte: "Aleyhte",
+  sifirla: "Baştan başla",
+  oyunuz: "Sizin cevabınız",
+  tutarlilik: "Tutarlılık notu",
+  cevaplarCihazda: "Cevaplarınız yalnızca bu cihazda saklanır, hiçbir yere gönderilmez.",
+  cevaplariSil: "Cevaplarımı sil",
+  // zaman çizelgesi ve harita
+  yakinlas: "Yakınlaştır",
+  uzaklas: "Uzaklaştır",
+  hepsi: "Tümünü göster",
+  yilCizgisi: "Bu yılda yaşayanlar",
+  kimlerYasiyordu: (y) => `${y}: kimler yaşıyordu?`,
+  bugun: "bugün",
+  haritaKaynak: "Kıyı çizgileri: Natural Earth (kamu malı)",
+  etkilendi: "Etkilendikleri",
+  etkiledi: "Etkiledikleri",
+  ileri: "İleri",
+  geri: "Geri",
+};

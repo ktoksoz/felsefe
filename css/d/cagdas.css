@@ -1,0 +1,38 @@
+/* çağdaş felsefe deney stilleri */
+.oy-yonerge { margin: 0 0 8px; font-family: var(--f-display); font-size: 1.15rem; }
+.oy-ozler { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.btn.oz { font-size: .84rem; padding: .35em .85em; }
+.oy-tablo-k { overflow-x: auto; }
+.oy-tablo { border-collapse: collapse; font-family: var(--f-ui); font-size: .86rem; width: 100%; }
+.oy-tablo th, .oy-tablo td { padding: 3px 6px; text-align: center; border-bottom: 1px solid var(--line); }
+.oy-tablo tbody th { text-align: left; font-weight: 500; color: var(--ink); white-space: nowrap; }
+.oy-tablo .oz-th { color: var(--muted); font-weight: 500; }
+.oy-tablo td { color: var(--muted); }
+.oy-tablo td.sec { background: rgba(201,165,92,.1); color: var(--brass-2); }
+.oy-tablo tr.dis th { color: var(--muted); text-decoration: line-through; text-decoration-color: rgba(201,165,92,.6); }
+.oy-tablo tr[data-tur="degil"].ic th { color: #E0524A; }
+.oy-tablo tr.ara td { text-align: left; color: var(--brass-2); font-size: .76rem; padding-top: 8px; border-bottom: 0; }
+.oy-ozet { margin: 10px 0; font-size: .95rem; color: var(--ink-2); }
+.oy-ozet b { color: var(--ink); font-family: var(--f-ui); }
+.ws-wrap { display: flex; flex-direction: column; gap: 14px; }
+.ws-ust { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: start; }
+.ws-et { margin: 0 0 6px; font-family: var(--f-ui); font-weight: 700; font-size: .8rem; color: var(--brass-2); }
+.ws-246 { margin: 0; font-family: var(--f-display); font-size: 2.2rem; color: var(--ink); letter-spacing: .05em; }
+.ws-kart p.muted { margin: 0; font-size: .85rem; }
+.ws-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 6px; }
+.ws-in { width: 4.6em; padding: .4em .5em; background: var(--bg); border: 1px solid var(--line); color: var(--ink); font-family: var(--f-ui); font-size: 1.05rem; text-align: center; }
+.ws-in:focus { border-color: var(--brass); outline: none; }
+.ws-h { font-size: .82rem; padding: .3em .8em; }
+.ws-orta { display: grid; grid-template-columns: minmax(150px, .7fr) 1fr; gap: 22px; }
+.ws-gecmis { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; max-height: 190px; overflow: auto; font-family: var(--f-ui); font-size: .9rem; }
+.ws-gecmis li { display: flex; justify-content: space-between; gap: 10px; padding: 2px 8px; border-left: 3px solid #9CCB72; }
+.ws-gecmis li.uymaz { border-left-color: #E0524A; }
+.ws-gecmis li b { font-weight: 500; color: var(--muted); }
+.ws-tahmin { display: grid; gap: 5px; margin-bottom: 8px; }
+.ws-acik { margin: 0 0 4px; color: var(--ink); }
+.bg-wrap { flex: 1; }
+.bg-p .secim + .bg-uzak, .bg-uzak { margin-top: 16px; }
+.bg-bag { margin: 12px 0 0; font-family: var(--f-ui); font-size: .9rem; }
+.bg-bag a { text-decoration: none; border-bottom: 1px solid rgba(226,194,126,.45); }
+@media (max-width: 860px) { .ws-ust, .ws-orta { grid-template-columns: 1fr; } }
+.oz-no { display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; margin-right: .4em; border-radius: 50%; border: 1px solid currentColor; font-size: .72rem; color: var(--brass-2); }

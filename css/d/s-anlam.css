@@ -1,0 +1,11 @@
+/* Büyük soru 8: Sisifos ve dört yol */
+.anlam .an-sahne { flex: 0 0 34%; min-height: 150px; border-bottom: 1px solid var(--line); }
+.an-alt { flex: 1; min-height: 0; }
+.an-q { margin-bottom: 12px; }
+.an-soru { margin: 0 0 6px; font-family: var(--f-display); font-size: 1.1rem; color: var(--ink); }
+.an-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.btn.an-sec { white-space: normal; text-align: left; font-weight: 500; font-size: .88rem; border-radius: var(--r-md); line-height: 1.35; }
+.an-sonuc h4 { margin: 8px 0 6px; font-family: var(--f-display); font-size: 1.2rem; }
+.an-sonuc p { margin: 6px 0; font-size: .92rem; }
+.an-sonuc .oy-bar { grid-template-columns: 110px 1fr 2.6em; }
+@media (max-width: 860px) { .an-row { grid-template-columns: 1fr; } .anlam .an-sahne { flex-basis: 220px; } }

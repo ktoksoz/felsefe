@@ -1,0 +1,40 @@
+/* Büyük soru 1: dört kuşku, Gettier */
+.ks-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border-bottom: 1px solid var(--line); }
+.ks-tile {
+  display: grid; justify-items: center; gap: 4px; padding: 14px 8px 10px; cursor: pointer;
+  background: var(--bg-2); border: 0; color: var(--ink-2); font-family: var(--f-ui);
+  border-bottom: 3px solid transparent; transition: background .2s;
+}
+.ks-tile svg { width: 100%; max-width: 120px; height: auto; color: var(--ink-2); }
+.ks-tile b { font-family: var(--f-display); font-weight: 400; font-size: 1.1rem; color: var(--ink); }
+.ks-tile small { font-size: .75rem; min-height: 1.2em; color: var(--muted); }
+.ks-tile:hover { background: #13203d; }
+.ks-tile.on { background: #172645; border-bottom-color: var(--gel); }
+.ks-tile[data-v="disla"] small { color: var(--lehte); }
+.ks-tile[data-v="kalir"] small { color: var(--aleyhte); }
+.ks-panel { flex: 1; min-height: 0; }
+.ks-soru { margin: 0 0 10px; font-size: 1.1rem; color: var(--ink); font-style: italic; }
+.ks-bag { margin: 10px 0 0; font-family: var(--f-ui); font-size: .88rem; }
+.ks-bag a { text-decoration: none; border-bottom: 1px solid rgba(226,194,126,.45); }
+.ks-ozet { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); }
+.ks-ozet h4 { margin: 0 0 4px; font-family: var(--f-display); font-size: 1.15rem; }
+.ks-ozet p { margin: 0 0 6px; color: var(--ink-2); }
+.ks-cogito { font-family: var(--f-display) !important; font-size: 1.4rem; color: var(--brass-2) !important; letter-spacing: .04em; animation: rise .5s ease; }
+
+.gt-sekme { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+.gt-sekme button {
+  flex: 1 1 auto; padding: 10px 12px; border: 0; border-bottom: 2px solid transparent; background: none; cursor: pointer;
+  font-family: var(--f-ui); font-size: .88rem; color: var(--ink-2);
+}
+.gt-sekme button.on { color: var(--ink); border-bottom-color: var(--brass); }
+.gt-sekme button[data-v="bilgi"]::after { content: " ●"; color: var(--lehte); }
+.gt-sekme button[data-v="degil"]::after { content: " ○"; color: var(--aleyhte); }
+.gt-kart { flex: 1; min-height: 0; }
+.gt-ust { display: flex; gap: 16px; align-items: center; margin-bottom: 8px; }
+.gt-ust svg { width: 110px; height: auto; color: var(--ink-2); flex: none; }
+.gt-ust h4 { margin: 0; font-family: var(--f-display); font-size: 1.35rem; }
+.gt-metin { margin: 0 0 12px; color: var(--ink); line-height: 1.55; }
+.gt-jtb { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 3px; font-family: var(--f-ui); font-size: .9rem; color: var(--ink-2); }
+.gt-jtb i { font-style: normal; color: var(--brass-2); margin-right: 8px; }
+.gt-jtb b { color: var(--ink); }
+@media (max-width: 860px) { .ks-grid { grid-template-columns: repeat(2, 1fr); } .gt-ust svg { width: 80px; } }

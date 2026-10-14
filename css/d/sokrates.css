@@ -1,0 +1,36 @@
+/* Sofistler ve Sokrates deney stilleri */
+.kv-oy, .kr-oy, .df-sonuc { border-top: 1px solid var(--line); max-height: 48%; }
+.df-fill { flex: 0 0 34%; min-height: 150px; }
+.df-kartlar { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); }
+.df-kart {
+  display: grid; gap: 3px; text-align: left; padding: 10px 14px; cursor: pointer; background: transparent; border: 0;
+  border-right: 1px solid var(--line); color: var(--ink-2); font-family: var(--f-ui); font-size: .84rem; line-height: 1.35;
+}
+.df-kart:last-child { border-right: 0; }
+.df-kart b { font-family: var(--f-display); font-weight: 400; font-size: 1.08rem; color: var(--ink); }
+.df-kart:hover { background: rgba(201,165,92,.06); }
+.df-kart.on { background: rgba(201,165,92,.12); box-shadow: inset 0 -2px 0 var(--brass); }
+.df-kart.seen b::after { content: " ✓"; color: var(--brass-2); font-family: var(--f-ui); font-size: .8rem; }
+.df-sonuc { flex: 1; max-height: none; }
+.df-cevap { margin: 0 0 6px; color: var(--ink); }
+.df-not { margin: 0 0 10px; color: var(--ink-2); font-size: .92rem; font-style: italic; }
+.df-varis { margin: 4px 0 12px; padding: 9px 12px; border-left: 3px solid var(--g-yunan); background: rgba(224,138,79,.08); color: var(--ink); }
+.sorgulama .sg-ust { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 18px 10px 38px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.sg-yol { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; flex-wrap: wrap; }
+.sg-yol li { font-family: var(--f-ui); font-size: .8rem; color: var(--muted); padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px; }
+.sg-yol li + li::before { content: ""; }
+.sg-yol li.gecti { color: var(--ink-2); border-color: rgba(201,165,92,.4); }
+.sg-yol li.on { color: #1B1405; background: var(--brass); border-color: var(--brass); }
+.sg-sayac { font-family: var(--f-ui); font-size: .8rem; color: var(--muted); }
+.kr-fill { flex: 0 0 40%; min-height: 160px; }
+.kr-baslik { margin: 14px 0 6px; font-family: var(--f-display); font-weight: 400; font-size: 1.1rem; }
+.kr-args { display: flex; flex-wrap: wrap; gap: 6px; }
+.kr-arg-out { display: grid; gap: 6px; margin-top: 8px; }
+.kr-arg-out p { margin: 0; font-size: .95rem; color: var(--ink-2); }
+.kr-y { color: var(--muted); font-family: var(--f-ui); }
+@media (max-width: 860px) { .df-kartlar { grid-template-columns: 1fr; } .df-kart { border-right: 0; border-bottom: 1px solid var(--line); } .kv-oy, .kr-oy { max-height: none; } }
+.df-bos { margin: 0; color: var(--muted); font-style: italic; }
+@media (max-width: 860px) {
+  #protagoras .stage > .fill, #sokrates .stage > .fill, #sokrates-olum .stage > .fill { flex: none; height: 260px; min-height: 0; }
+  #sokratik-sorgulama .stage { min-height: 80vh; }
+}

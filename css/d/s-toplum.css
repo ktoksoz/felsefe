@@ -1,0 +1,12 @@
+/* Büyük soru 5: cehalet peçesi, doğa durumu */
+.pece .pc-ust, .doga .dd-ust { max-height: 46%; border-bottom: 1px solid var(--line); }
+.pece .fill, .doga .fill { min-height: 170px; }
+.pc-sonuc { padding: 10px 18px 12px; border-top: 1px solid var(--line); font-size: .95rem; min-height: 64px; }
+.pc-sonuc p { margin: 0 0 4px; color: var(--ink-2); }
+.pc-sonuc b { color: var(--ink); }
+.controls input[type="checkbox"] { accent-color: var(--brass); }
+.dd-etiket { position: absolute; left: 14px; top: 10px; font-family: var(--f-display); font-size: 1.05rem; color: var(--ink); background: rgba(14,24,48,.85); padding: 2px 10px; pointer-events: none; }
+.dd-bag { font-family: var(--f-ui); font-size: .85rem; text-decoration: none; border-bottom: 1px solid rgba(226,194,126,.45); }
+.dd-alt { border-top: 1px solid var(--line); padding-top: 10px !important; padding-bottom: 12px !important; }
+.dd-olc .oy-bar { grid-template-columns: 80px 1fr 2.4em; }
+@media (max-width: 860px) { .pece .pc-ust, .doga .dd-ust { max-height: none; } .pece .fill, .doga .fill { min-height: 240px; } }

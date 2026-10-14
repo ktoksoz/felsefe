@@ -1,0 +1,46 @@
+/* Helenistik ve Roma deney stilleri */
+/* kart ayıklama (Diogenes, Stoacılar) */
+.ay { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.ay-kutular { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 16px 16px 8px; }
+.ay-kutu {
+  min-height: 150px; padding: 10px 10px 12px; border: 1px solid rgba(201,165,92,.35);
+  background: rgba(255,255,255,.015); display: flex; flex-direction: column; gap: 6px;
+}
+.ay-kutu h4 { margin: 0; font-family: var(--f-display); font-weight: 400; font-size: 1.15rem; color: var(--ink); }
+.ay-alt { margin: 0; font-family: var(--f-ui); font-size: .76rem; color: var(--muted); }
+.ay-ic, .ay-havuz { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; }
+.ay-havuz { padding: 10px 16px 12px; min-height: 52px; border-top: 1px dashed var(--line); border-bottom: 1px solid var(--line); }
+.ay .kart { font-size: .86rem; text-align: left; }
+.ay .kart.ayni { border-color: rgba(201,165,92,.7); }
+.ay .kart.ayni::after { content: "●"; font-size: .6rem; color: var(--brass); margin-left: 2px; }
+.ay .kart.farkli { border-style: dashed; }
+.ay .kart:focus-visible { outline: 2px solid var(--brass); }
+.ay-geri { flex: 1; min-height: 90px; font-size: .95rem; }
+.ay-geri > p { margin: 0 0 6px; color: var(--ink-2); }
+.ay-not { padding: 8px 0 8px 12px; border-left: 3px solid var(--brass); margin-bottom: 10px; animation: rise .3s ease; }
+.ay-not.farkli { border-left-style: dashed; border-left-color: var(--aleyhte); }
+.ay-not p { margin: 0 0 4px; color: var(--ink-2); }
+.ay-baslik { color: var(--ink) !important; font-family: var(--f-ui); font-size: .9rem; }
+.ay-ozet { font-family: var(--f-ui); font-weight: 700; color: var(--brass-2) !important; margin: 4px 0 12px !important; }
+@media (max-width: 560px) { .ay-kutular { gap: 8px; padding: 12px 10px 6px; } .ay-kutu { min-height: 120px; } .ay .kart { font-size: .8rem; } }
+
+/* haz hesabı */
+.ep-panel { border-top: 1px solid var(--line); max-height: 54%; }
+.ep-panel .secim-soru { font-size: 1.1rem; }
+.ep-panel .btn.sec { font-size: .86rem; padding: .4em .9em; }
+
+/* yanılsamalar */
+.sp-panel { border-top: 1px solid var(--line); max-height: 50%; }
+.sp-q { margin: 0 0 6px; font-family: var(--f-display); font-size: 1.15rem; color: var(--ink); }
+.sp-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.sp-geri { margin: 0 0 10px; color: var(--ink-2); font-size: .95rem; }
+.sp-geri b { color: var(--brass-2); font-family: var(--f-ui); }
+.sp-epokhe { border-top: 1px solid var(--line); padding-top: 10px; }
+.sp-epokhe:empty { display: none; }
+
+/* sudur */
+.pl-panel { border-top: 1px solid var(--line); max-height: 46%; }
+.pl-bilgi { margin-bottom: 12px; }
+.pl-bilgi h4 { margin: 0 0 4px; font-family: var(--f-display); font-size: 1.15rem; color: var(--ink); }
+.pl-bilgi p { margin: 0; color: var(--ink-2); }
+@media (max-width: 860px) { .ep-panel, .sp-panel, .pl-panel { max-height: none; } }

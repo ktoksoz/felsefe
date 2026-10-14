@@ -1,0 +1,9 @@
+/* Büyük soru 3: Theseus'un gemisi, kişisel kimlik */
+.th .fill, .km .fill { min-height: 240px; }
+.th-panel, .km-panel { border-top: 1px solid var(--line); max-height: 46%; display: grid; gap: 14px; align-content: start; }
+.th-panel .secim + .secim { padding-top: 12px; border-top: 1px dashed var(--line); }
+.th-sayac { font-family: var(--f-ui); font-size: .88rem; color: var(--brass-2); font-variant-numeric: tabular-nums; }
+.th-ipucu { margin: 0; color: var(--ink); font-style: italic; }
+.km-not { margin: 0; font-family: var(--f-ui); font-size: .8rem; color: var(--muted); }
+.th .secim-soru, .km .secim-soru { font-size: 1.1rem; }
+@media (max-width: 860px) { .th-panel, .km-panel { max-height: none; } .th .controls .spacer { display: none; } }

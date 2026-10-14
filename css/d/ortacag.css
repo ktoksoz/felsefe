@@ -1,0 +1,27 @@
+/* Orta Çağ deney stilleri */
+.aq-ag { flex: 1; min-height: 0; display: flex; }
+.aq-ag .ag .fill { min-height: 220px; }
+.aq-panel, .us-panel { border-top: 1px solid var(--line); max-height: 42%; flex: none; }
+.us-wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 22px; }
+.us-col h4 { margin: 0 0 8px; font-family: var(--f-ui); font-weight: 700; font-size: .85rem; color: var(--muted); }
+.us-v, .us-g { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.us-v li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 8px 6px 12px; border-left: 2px solid var(--brass); background: rgba(255,255,255,.025); font-family: var(--f-ui); font-size: .93rem; transition: opacity .3s; }
+.us-v li.gerekli { border-left-color: var(--lehte); }
+.us-v li.gerekli .us-ad::after { content: " · gerekli"; color: var(--lehte); font-size: .76rem; }
+.us-v li.kesik { opacity: .45; border-left-color: var(--line); }
+.us-v li.kesik .us-ad { text-decoration: line-through; }
+.us-kes { flex: none; cursor: pointer; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: .2em .8em; font-family: var(--f-ui); font-size: .8rem; font-weight: 700; }
+.us-kes:hover { border-color: var(--brass); }
+.us-g li { display: flex; gap: 10px; align-items: center; padding: 6px 8px; font-family: var(--f-ui); font-size: .93rem; color: var(--ink-2); border-bottom: 1px solid var(--line); }
+.us-i { width: 1.5em; height: 1.5em; flex: none; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line); font-style: normal; font-size: .85rem; }
+.us-g li.ok .us-i { border-color: var(--lehte); color: var(--lehte); }
+.us-g li.celiski { color: var(--ink); }
+.us-g li.celiski .us-i { border-color: var(--aleyhte); color: var(--aleyhte); }
+.us-g li.yok .us-i { color: var(--muted); }
+.us-alt { border-top: 1px solid var(--line); padding-top: 10px !important; padding-bottom: 12px !important; }
+.us-olc { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--f-ui); font-size: .9rem; color: var(--ink-2); }
+.us-olc b { color: var(--ink); font-size: 1.05rem; }
+.us-olc .kotu b { color: var(--aleyhte); }
+.us-karar { margin: 8px 0; color: var(--ink); font-style: italic; }
+.us-karar.tamam { color: var(--brass-2); }
+@media (max-width: 860px) { .us-wrap { grid-template-columns: 1fr; } .aq-panel, .us-panel { max-height: none; } .aq-ag { min-height: 320px; } }

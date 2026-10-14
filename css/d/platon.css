@@ -1,0 +1,56 @@
+/* Platon deney stilleri: mağara, idealar, ruh arabası */
+.mg-ileri { min-width: 0; white-space: normal; text-align: left; }
+.mg-noktalar { display: flex; gap: 5px; }
+.mg-noktalar button { width: 11px; height: 11px; padding: 0; border-radius: 50%; border: 1px solid var(--brass); background: transparent; cursor: pointer; }
+.mg-noktalar button.gecti { background: rgba(201,165,92,.4); }
+.mg-noktalar button.on { background: var(--brass-2); box-shadow: 0 0 0 3px rgba(201,165,92,.2); }
+.mg-yazi { border-top: 1px solid var(--line); max-height: 42%; min-height: 120px; }
+.mg-yazi h4 { margin: 0 0 4px; font-family: var(--f-display); font-size: 1.15rem; display: flex; align-items: center; gap: 10px; }
+.mg-no { display: inline-grid; place-items: center; width: 1.6em; height: 1.6em; border-radius: 50%; border: 1px solid var(--brass); color: var(--brass-2); font-family: var(--f-ui); font-size: .78rem; }
+.mg-yazi p { margin: 0 0 6px; color: var(--ink-2); font-size: .98rem; }
+.mg-yer { font-family: var(--f-ui); font-size: .78rem; color: var(--muted) !important; }
+.mg-yazi .secim { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); }
+.mg-yazi .secim-soru { font-size: 1.1rem; }
+
+.id-pad { min-height: 200px; }
+.id-skor { position: absolute; right: 14px; top: 12px; text-align: right; pointer-events: none; font-family: var(--f-ui); }
+.id-skor b { display: block; font-family: var(--f-display); font-weight: 400; font-size: 2rem; color: var(--brass-2); line-height: 1; }
+.id-skor span { font-size: .82rem; color: var(--ink-2); }
+.id-cizgi-wrap { padding: 10px 16px 6px; border-top: 1px solid var(--line); background: rgba(10,18,38,.5); }
+.id-dunya { display: flex; font-family: var(--f-ui); font-size: .74rem; color: var(--muted); margin-bottom: 4px; }
+.id-dunya span { flex: 1; }
+.id-dunya span + span { text-align: right; color: var(--brass-2); }
+.id-cizgi { display: flex; gap: 0; border-top: 1px solid var(--brass); border-bottom: 1px solid var(--brass); }
+.id-par {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center; min-width: 0;
+  padding: 6px 8px; border: 0; border-right: 1px solid rgba(201,165,92,.45); background: transparent; color: var(--ink);
+  font-family: var(--f-ui); font-weight: 700; font-size: .85rem; cursor: pointer; text-align: left;
+}
+.id-par:last-child { border-right: 0; }
+.id-par[data-d="0"] { background: rgba(255,255,255,.02); }
+.id-par[data-d="1"] { background: rgba(243,227,179,.06); }
+.id-par:nth-child(2) { border-right: 2px solid var(--brass-2); }
+.id-par small { font-weight: 400; font-size: .72rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.id-par:hover, .id-par.on { background: rgba(201,165,92,.18); }
+.id-alt { border-top: 1px solid var(--line); max-height: 44%; }
+.id-alt h4 { margin: 0 0 4px; font-family: var(--f-display); font-size: 1.1rem; }
+.id-alt h4 small { font-family: var(--f-ui); font-size: .8rem; color: var(--muted); }
+.id-alt p { margin: 0 0 6px; color: var(--ink-2); }
+.id-ornek { color: var(--lehte) !important; font-style: italic; }
+.id-alt .secim { margin-top: 8px; }
+.id-alt .secim-soru { font-size: 1.08rem; }
+
+.ru-ctl label { min-width: 0; }
+.ru-ctl input[type="range"] { width: 120px; }
+.ru-akil { color: var(--ink) !important; }
+.ru-alt { border-top: 1px solid var(--line); max-height: 40%; }
+.ru-durum { margin: 0 0 10px; color: var(--ink); font-style: italic; font-size: 1.02rem; }
+.ru-kent { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.ru-sinif { display: grid; gap: 3px; padding: 6px 0 6px 10px; border-left: 2px solid var(--line); font-family: var(--f-ui); }
+.ru-sinif.on { border-left-color: var(--brass-2); }
+.ru-sinif b { font-size: .86rem; color: var(--ink); }
+.ru-sinif span { font-size: .76rem; color: var(--muted); }
+.ru-sinif i { display: block; height: 4px; background: var(--line); }
+.ru-sinif em { display: block; height: 100%; background: var(--brass); transition: width .3s; }
+.ru-not { grid-column: 1 / -1; margin: 2px 0 0; font-family: var(--f-ui); font-size: .84rem; color: var(--ink-2); }
+@media (max-width: 860px) { .ru-kent { grid-template-columns: 1fr; } .ru-ctl input[type="range"] { width: 110px; } }

@@ -1,0 +1,46 @@
+/* İslam felsefesi deney stilleri */
+.bh-band { list-style: none; margin: 0; padding: 10px 14px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; border-bottom: 1px solid var(--line); counter-reset: dil; }
+.bh-band li { position: relative; padding: 6px 10px; border-top: 2px solid var(--line); font-family: var(--f-ui); font-size: .82rem; color: var(--muted); transition: border-color .4s, color .4s; }
+.bh-band li b { display: block; font-family: var(--f-display); font-weight: 400; font-size: 1.05rem; color: var(--ink-2); }
+.bh-band li small { color: var(--muted); }
+.bh-band li span { display: block; }
+.bh-band li:not(:last-child)::after { content: "→"; position: absolute; right: -10px; top: 8px; color: var(--muted); }
+.bh-band li.gecti { border-top-color: rgba(201,165,92,.5); }
+.bh-band li.on { border-top-color: var(--brass); color: var(--ink); background: rgba(201,165,92,.08); }
+.bh-band li.on b { color: var(--brass-2); }
+.bh-ag { flex: 1; min-height: 0; display: flex; }
+.bh-ag .ag .fill { min-height: 200px; }
+.bh-panel, .es-panel, .ua-panel, .pa-panel, .hy-panel, .hd-panel { border-top: 1px solid var(--line); max-height: 44%; flex: none; }
+.bh-not { font-size: .85rem; }
+.es-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.es-halka { fill: none; stroke: rgba(201,165,92,.2); stroke-dasharray: 2 6; }
+.es-c { stroke: var(--brass); stroke-width: 1.2; transition: stroke-opacity .4s; }
+.es-n { fill: var(--bg-2); stroke: var(--brass); stroke-width: 1.4; }
+.es-n.on { fill: color-mix(in srgb, var(--g-islam) 35%, var(--bg-2)); stroke: var(--g-islam); }
+.es-m { fill: var(--panel); stroke: var(--brass); stroke-width: 1.6; }
+.es-m.on { stroke: var(--g-islam); fill: color-mix(in srgb, var(--g-islam) 22%, var(--bg-2)); }
+.es-mt { font-family: var(--f-ui); font-size: 12px; font-weight: 700; fill: var(--ink); }
+.es-ar { font-family: "Amiri", serif; font-size: 20px; fill: var(--g-islam); }
+.es-alt { padding: 8px 18px 0; }
+.es-etiket { margin: 0; font-family: var(--f-ui); font-size: .95rem; color: var(--ink-2); }
+.es-etiket b { color: var(--ink); }
+.ua-durum { margin: 0 0 10px; font-family: var(--f-ui); font-size: .92rem; color: var(--muted); }
+.ua-durum.hepsi { color: var(--brass-2); font-family: var(--f-body); font-style: italic; font-size: 1.05rem; }
+.pa-metin { margin: 0 0 12px; color: var(--ink); font-size: .98rem; min-height: 3em; }
+.hy-b { margin: 0 0 4px; font-family: var(--f-display); font-weight: 400; font-size: 1.15rem; color: var(--brass-2); }
+.hy-a { margin: 0 0 12px; color: var(--ink-2); font-size: .97rem; }
+.hd-top { padding: 7px 14px 7px 34px; }
+.hd-ctl label { font-size: .86rem; }
+.hd-ctl input[type="range"] { width: 120px; }
+.hd-ozet { margin: 0 0 12px; font-family: var(--f-ui); font-size: .93rem; color: var(--ink-2); }
+.hd-ozet b { color: var(--ink); }
+@media (max-width: 860px) {
+  .bh-band { grid-template-columns: 1fr 1fr; }
+  .bh-band li:nth-child(2)::after { display: none; }
+  .bh-panel, .es-panel, .ua-panel, .pa-panel, .hy-panel, .hd-panel { max-height: none; }
+  .stage.bh .fill, .stage .bh-ag { min-height: 300px; }
+}
+#farabi .stage > .fill, #ibn-sina .stage > .fill, #gazali-ibn-rusd .stage > .fill, #ibn-tufeyl .stage > .fill, #ibn-haldun .stage > .fill { min-height: 220px; }
+@media (max-width: 860px) {
+  #farabi .stage > .fill, #ibn-sina .stage > .fill, #gazali-ibn-rusd .stage > .fill, #ibn-tufeyl .stage > .fill, #ibn-haldun .stage > .fill { min-height: 320px; flex: none; }
+}

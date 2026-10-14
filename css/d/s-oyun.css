@@ -1,0 +1,21 @@
+/* Büyük soru 6: mahkûmun ikilemi, ortak mallar */
+.mahkum .mk2-ust { max-height: 46%; border-bottom: 1px solid var(--line); }
+.mk2-kur { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line); display: grid; gap: 6px; }
+.mk2-kur h4 { margin: 0; font-family: var(--f-display); font-size: 1.1rem; }
+.mk2-k { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-family: var(--f-ui); font-size: .9rem; color: var(--ink-2); flex-wrap: wrap; }
+.mk2-tanim { margin: 0; font-family: var(--f-ui); font-size: .86rem; color: var(--brass-2); min-height: 1.2em; }
+.mk2-alt { flex: 1; min-height: 0; }
+.mk2-bars .oy-bar { grid-template-columns: minmax(150px, auto) 1fr 3.4em; }
+.mk2-bars .oy-bar .tr i { background: var(--aleyhte); }
+.mk2-bars .oy-bar.ilk .tr i { background: var(--brass); }
+.mk2-bars .oy-bar.siz span:first-child { color: var(--brass-2); font-weight: 700; }
+.mk2-bars .oy-bar.siz .tr i { background: var(--lehte); }
+.mk2-sonuc { padding: 8px 0 0 !important; }
+.mk2-sonuc p { margin: 0 0 4px; font-size: .93rem; color: var(--ink-2); }
+.mk2-sonuc b { color: var(--ink); }
+.otlak .fill { min-height: 200px; }
+.ot-c2 { border-top: 0; padding-top: 0; }
+.ot-durum-k { border-top: 1px solid var(--line); padding-top: 8px !important; padding-bottom: 8px !important; }
+.ot-durum { margin: 0; font-family: var(--f-ui); font-size: .88rem; color: var(--ink-2); line-height: 1.45; }
+.ot-alt { max-height: 32%; border-top: 1px solid var(--line); }
+@media (max-width: 860px) { .mahkum .mk2-ust, .ot-alt { max-height: none; } .otlak .fill { min-height: 260px; } }
