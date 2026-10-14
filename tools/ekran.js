@@ -20,7 +20,7 @@ const exe = (() => {
     const errs = [];
     page.on("console", (m) => { if (m.type() === "error" || m.type() === "warning") errs.push(`[${m.type()}] ${m.text()}`); });
     page.on("pageerror", (e) => errs.push("[pageerror] " + e.message));
-    await page.goto(`http://localhost:${port}/index.html`, { waitUntil: "networkidle" });
+    await page.goto(port.startsWith("http") ? port : `http://localhost:${port}/index.html`, { waitUntil: "networkidle" });
     await page.evaluate(() => { try { localStorage.setItem("felsefe.rehber.kapali", "1"); } catch (e) {} });
     if (errs.length) console.log(`${w} yükleme:`, errs.join(" | "));
     const ids = only ? only.split(",") : await page.evaluate(() => [...document.querySelectorAll(".slide")].map((x) => x.id));
