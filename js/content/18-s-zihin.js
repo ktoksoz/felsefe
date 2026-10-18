@@ -13,7 +13,7 @@ slayt(`
       <p>Descartes ise 1637'de makinelerin dili, her duruma uygun biçimde kullanamayacağını öne sürmüştü (<em>Yöntem Üzerine Konuşma</em>, V. bölüm). Bugünün büyük dil modelleri bu soruları yeniden gündeme getirdi.</p>
     </details>
     <p class="try">Odaya girin: kural kitabını kullanarak Çince bir soruyu cevaplayın ve odadaki kişinin Çince anlayıp anlamadığına karar verin. "Turing testi" sekmesinde makineyi bulmayı deneyin.</p>
-    <p class="yz-bag">Büyük dil modelleri bu tartışmanın tam ortasında: <a href="https://yz.koraytoksoz.com" target="_blank" rel="noopener">yz.koraytoksoz.com: Nörondan dil modeline</a> sitesinde bir LLM'nin içinde gerçekte ne olduğunu adım adım görebilirsiniz.</p>
+    <p class="yz-bag">Büyük dil modelleri bu tartışmanın tam ortasında: <a href="https://egitim.koraytoksoz.com/yz/" target="_blank" rel="noopener">Nörondan dil modeline</a> sitesinde bir LLM'nin içinde gerçekte ne olduğunu adım adım görebilirsiniz.</p>
     <ul class="kim">
       <li data-f="turing">Davranışta ayırt edilemiyorsa, düşünmediğini söylemek için gerekçemiz zayıflar.</li>
       <li data-f="searle">Sözdizimi anlam için yeterli değildir; program çalıştırmak anlamak değildir.</li>

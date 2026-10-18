@@ -11,5 +11,5 @@ echo "Sürüm etiketi: $V"
 rsync -avz \
   --exclude tools --exclude test --exclude README.md --exclude PLAN.md --exclude LICENSE \
   --exclude .DS_Store --exclude .git --exclude .gitignore --exclude node_modules \
-  ./ "$1:~/felsefe.koraytoksoz.com/"
-echo "Yüklendi: https://felsefe.koraytoksoz.com"
+  ./ "$1:~/egitim.koraytoksoz.com/felsefe/"
+echo "Yüklendi: https://egitim.koraytoksoz.com/felsefe/"

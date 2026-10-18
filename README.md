@@ -1,6 +1,6 @@
 # Bilgelik Sevgisi: Felsefe Yolculuğu
 
-**Canlı site:** https://felsefe.koraytoksoz.com
+**Canlı site:** https://egitim.koraytoksoz.com/felsefe/ (eski adres https://felsefe.koraytoksoz.com buraya yönlendirilir; bütün eğitimler: https://egitim.koraytoksoz.com)
 
 Milet'ten bugüne felsefe tarihi ve felsefenin büyük soruları: haritalar, zaman çizelgeleri ve oynanabilir düşünce deneyleriyle, sesli anlatımlı etkileşimli bir sunum.
 Hazırlayan: **Koray Toksöz**
@@ -116,7 +116,7 @@ node tools/rehber_kontrol.js 8790                           # hayalet el hedefle
 tools/deploy.sh koray@koraytoksoz.com
 ```
 
-Betik CSS/JS bağlantılarındaki `?v=` sürüm etiketini yeniler ve rsync ile yalnızca değişen dosyaları `~/felsefe.koraytoksoz.com/` klasörüne gönderir. `tools/`, `test/` ve README gibi geliştirme dosyalarını göndermez, sunucudaki dosyaları silmez.
+Betik CSS/JS bağlantılarındaki `?v=` sürüm etiketini yeniler ve rsync ile yalnızca değişen dosyaları `~/egitim.koraytoksoz.com/felsefe/` klasörüne gönderir. `tools/`, `test/` ve README gibi geliştirme dosyalarını göndermez, sunucudaki dosyaları silmez.
 
 ## Kaynaklar ve ileri okuma
 
@@ -157,4 +157,4 @@ Ayrıntılar ve üçüncü taraf bileşenler: [LICENSE](LICENSE). GitHub bu dosy
 
 Önerilen atıf:
 
-> Koray Toksöz, *Bilgelik Sevgisi: Felsefe Yolculuğu*, https://felsefe.koraytoksoz.com (CC BY 4.0)
+> Koray Toksöz, *Bilgelik Sevgisi: Felsefe Yolculuğu*, https://egitim.koraytoksoz.com/felsefe/ (CC BY 4.0)

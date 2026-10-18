@@ -1,4 +1,4 @@
-# felsefe.koraytoksoz.com — DreamHost (Apache) ayarları
+# egitim.koraytoksoz.com/felsefe/ — DreamHost (Apache) ayarları
 
 # HTTP'yi HTTPS'e yönlendir
 <IfModule mod_rewrite.c>

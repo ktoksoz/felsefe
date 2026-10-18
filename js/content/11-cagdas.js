@@ -64,7 +64,7 @@ slayt(`
     <div class="kisiler" data-f="turing,singer,parfit,chalmers"></div>
     <details class="more"><summary>Daha fazla: kaynaklar</summary>
       <p>Turing, "Hesaplama Makineleri ve Zekâ" (<em>Mind</em>, 1950). Singer, "Kıtlık, Bolluk ve Ahlak" (<em>Philosophy &amp; Public Affairs</em>, 1972) ve <em>Hayvan Özgürleşmesi</em> (1975). Hans Jonas, <em>Sorumluluk İlkesi</em> (1979). Derek Parfit, <em>Nedenler ve Kişiler</em> (1984): gelecek kuşaklar ve "kimlik dışı" sorunu.</p>
-      <p>Yapay zekânın nasıl çalıştığını deneylerle anlatan kardeş site: <a href="https://yz.koraytoksoz.com" target="_blank" rel="noopener">yz.koraytoksoz.com</a></p>
+      <p>Yapay zekânın nasıl çalıştığını deneylerle anlatan kardeş site: <a href="https://egitim.koraytoksoz.com/yz/" target="_blank" rel="noopener">Nörondan Dil Modeline</a></p>
     </details>
     <p class="try">Üç güncel ikilemden birini seçin ve yanıtınızı verin; yanıtınızın hangi ilkeye dayandığını görün.</p>
     <p class="soru-bag" data-soru="zihin">Makineler düşünebilir mi?</p>

@@ -14,11 +14,13 @@ slayt(`
     <div class="kp-sag">
     <div class="kp-yakin" aria-live="polite"></div>
     <p class="kp-siteler">Diğer etkileşimli siteler:
-      <a href="https://yz.koraytoksoz.com" target="_blank" rel="noopener">Nörondan dil modeline</a> ·
-      <a href="https://muzik.koraytoksoz.com" target="_blank" rel="noopener">Müzik teorisi</a> ·
-      <a href="https://sdr.koraytoksoz.com" target="_blank" rel="noopener">Yazılım tanımlı radyo</a> ·
-      <a href="https://anten.koraytoksoz.com" target="_blank" rel="noopener">Antenler</a></p>
+      <a href="https://egitim.koraytoksoz.com/yz/" target="_blank" rel="noopener">Nörondan dil modeline</a> ·
+      <a href="https://egitim.koraytoksoz.com/muzik/" target="_blank" rel="noopener">Müzik teorisi</a> ·
+      <a href="https://egitim.koraytoksoz.com/sdr/" target="_blank" rel="noopener">Yazılım tanımlı radyo</a> ·
+      <a href="https://egitim.koraytoksoz.com/anten/" target="_blank" rel="noopener">Antenler</a> ·
+      <a href="https://egitim.koraytoksoz.com/elektronik/" target="_blank" rel="noopener">Elektronik</a></p>
     <div class="cover-meta">
+      <a class="all-link" href="https://egitim.koraytoksoz.com/">← Bütün eğitimler</a>
       <a class="gh-link" href="https://github.com/ktoksoz/felsefe" target="_blank" rel="noopener">${GH}<span>Kaynak kodu GitHub'da</span></a>
       <a class="lic" href="https://creativecommons.org/licenses/by/4.0/deed.tr" target="_blank" rel="license noopener" title="İçerik: Creative Commons Atıf 4.0">
         <img src="img/cc-cc.svg" alt="Creative Commons" width="20" height="20"><img src="img/cc-by.svg" alt="Atıf" width="20" height="20">

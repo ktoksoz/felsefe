@@ -17,6 +17,7 @@ slayt(`
     </div>
     <p class="hint">Anlatımlı tur slaytları kendiliğinden ilerletir; istediğiniz an durup deneylerle oynayabilirsiniz. Kendi hızınızda gezerken <kbd>→</kbd> ile ilerleyin, <kbd>O</kbd> ile tüm slaytları görün.</p>
     <div class="cover-meta">
+      <a class="all-link" href="https://egitim.koraytoksoz.com/">← Bütün eğitimler</a>
       <a class="gh-link" href="https://github.com/ktoksoz/felsefe" target="_blank" rel="noopener">${GH}<span>Kaynak kodu GitHub'da</span></a>
       <a class="lic" href="https://creativecommons.org/licenses/by/4.0/deed.tr" target="_blank" rel="license noopener" title="İçerik: Creative Commons Atıf 4.0">
         <img src="img/cc-cc.svg" alt="Creative Commons" width="20" height="20"><img src="img/cc-by.svg" alt="Atıf" width="20" height="20">

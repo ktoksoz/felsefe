@@ -86,7 +86,7 @@ slayt(`
       <p>Pythagoras hiçbir şey yazmadı ve öğrencileri buluşlarını ona atfetti. Bu yüzden "Pythagoras'ın" dediğimiz şeylerin çoğu Pythagorasçı okula aittir.</p>
       <p>Demircinin örslerinden çıkan seslerle oranları keşfettiği öyküsü geç bir efsanedir (Nikomakhos, MS 2. yy) ve fiziksel olarak yanlıştır: çekiç ağırlığı perdeyi bu oranlarla belirlemez. Tel deneyi ise doğrudur ve bugün de tekrarlanabilir.</p>
       <p>Adını taşıyan teorem, kendisinden en az bin yıl önce Babil'de biliniyordu (Plimpton 322 tableti, y. MÖ 1800). Kanıtı ilk kimin verdiği bilinmiyor.</p>
-      <p>Müzikteki oranların ayrıntısı için: <a href="https://muzik.koraytoksoz.com" target="_blank" rel="noopener">muzik.koraytoksoz.com</a></p>
+      <p>Müzikteki oranların ayrıntısı için: <a href="https://egitim.koraytoksoz.com/muzik/" target="_blank" rel="noopener">Titreşimden Şarkıya</a></p>
     </details>
     <p class="try">Oktav, beşli ve dörtlüyü çalın; sonra köprüyü rastgele bir yere çekip uyumsuz sesi duyun.</p>
   </div>

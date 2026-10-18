@@ -147,7 +147,7 @@
           itiraz: "Her şey için temkin, hiçbir şey yapamamaya varabilir. Bir taşın bilinçsiz olduğunu da kanıtlayamayız." },
       ],
     });
-    panels.yz.append(h("p.bg-bag", h("a", { href: "#s-cince-oda" }, "Büyük soru: Zihin ve makine"), " · ", h("a", { href: "https://yz.koraytoksoz.com", target: "_blank", rel: "noopener" }, "Bir dil modeli nasıl çalışır? ↗")));
+    panels.yz.append(h("p.bg-bag", h("a", { href: "#s-cince-oda" }, "Büyük soru: Zihin ve makine"), " · ", h("a", { href: "https://egitim.koraytoksoz.com/yz/", target: "_blank", rel: "noopener" }, "Bir dil modeli nasıl çalışır? ↗")));
     panels.bio = h("div.bg-p");
     Oy.secim(panels.bio, {
       anahtar: "felsefe-bugun.havuz", soru: "Sığ bir havuzda bir çocuk boğuluyor. Kurtarırsanız pahalı ayakkabılarınız mahvolacak. Ne yaparsınız?",
